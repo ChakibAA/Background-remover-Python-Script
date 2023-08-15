@@ -24,5 +24,10 @@ def remove_background():
         return f"Error: {str(e)}", 500
 
 
+@app.route('/', methods=['GET'])
+def hello():
+    return 'This is backgroud remover'
+
+
 if __name__ == '__main__':
     app.run()
